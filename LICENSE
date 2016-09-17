@@ -26,9 +26,9 @@ THE SOFTWARE.
 -----------------------------------------------------------------------------
 
 * highlight.pack.js
-  [preview/js/lib/highlight.pack.js](https://github.com/kannokanno/previm/blob/master/preview/js/lib/highlight.pack.js)
+  [preview/js/lib/highlight.pack.js](https://github.com/kyary/previm/blob/master/preview/js/lib/highlight.pack.js)
 * github.css
-  [preview/css/lib/github.css](https://github.com/kannokanno/previm/blob/master/preview/css/lib/github.css)
+  [preview/css/lib/github.css](https://github.com/kyary/previm/blob/master/preview/css/lib/github.css)
 
 Copyright (c) 2006, Ivan Sagalaev
 All rights reserved.
