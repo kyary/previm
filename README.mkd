@@ -2,7 +2,7 @@
 
 ## Previm
 
-プレビュー用のVimプラグインです。  
+プレビュー用のVimプラグインです。
 
 ![previm](https://raw.github.com/wiki/kannokanno/previm/images/previm-example.gif)
 
@@ -17,8 +17,8 @@
 
 ### 変換のため
 
-Markdownとtextileの場合は必須なものはありません。  
-reStructuredTextの場合は`rst2html.py`が必要です。  
+Markdownとtextileの場合は必須なものはありません。
+reStructuredTextの場合は`rst2html.py`が必要です。
 `docutils`をインストールすると`rst2html.py`コマンドが使えるようになります。
 
     % pip install docutils
@@ -65,3 +65,17 @@ graph TD;
 </pre>
 
 ![previm](https://raw.github.com/wiki/kannokanno/previm/images/previm-example-mermaid.png)
+
+### MathJax
+
+[MathJax](https://www.mathjax.org/)による数式表示に対応しています。
+
+インラインバージョン
+$
+f(a) = \frac{1}{2\pi i} \oint_\gamma \frac{f(z)}{z - a}dz
+$
+
+ブロックバージョン
+$$
+f(a) = \frac{1}{2\pi i} \oint_\gamma \frac{f(z)}{z - a}dz
+$$

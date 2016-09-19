@@ -17,6 +17,24 @@
             <script src="js/lib/highlight.pack.js"></script>
             <script src="js/lib/textile.js"></script>
             <script src="js/lib/mermaid.min.js"></script>
+            <script src="js/lib/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+              MathJax.Hub.Config({
+                "HTML-CSS": {
+                    availableFonts: ["STIX-Web"],
+                    preferredFont: "STIX-Web",
+                    webFont: "STIX-Web",
+                    mtextFontInherit: true,
+                    matchFontHeight: true,
+                },
+                "SVG": {
+                    font: "STIX-Web",
+                },
+                tex2jax: {
+                  inlineMath: [['$','$'], ['\\(','\\)']],
+                  processEscapes: true
+                },
+              });
+            </script>
             <script src="js/previm.js"></script>
             <div id="monitor"></div>
         </div>

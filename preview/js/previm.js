@@ -1,6 +1,16 @@
 'use strict';
 
 (function(_doc, _win) {
+  marked.setOptions({
+    gfm: true,
+    tables: true,
+    breaks: false,
+    pedantic: false,
+    sanitize: true,
+    smartLists: true,
+    smartypants: false,
+  });
+
   var REFRESH_INTERVAL = 1000;
   var marked_renderer = new marked.Renderer();
   var defaultCodeBlockRenderer = marked_renderer.code;
@@ -79,7 +89,7 @@
     if (needReload && (typeof getContent === 'function') && (typeof getFileType === 'function')) {
       var beforePageYOffset = _win.pageYOffset;
       _doc.getElementById('preview').innerHTML = transform(getFileType(), getContent());
-
+      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
       mermaid.init();
       Array.prototype.forEach.call(_doc.querySelectorAll('pre code'), hljs.highlightBlock);
       autoScroll('body', beforePageYOffset);
